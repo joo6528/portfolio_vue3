@@ -78,13 +78,13 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useUIStore } from '@/stores/ui'
 
-import { keywordData } from "@/data/keyword"
-import { skillsData } from "@/data/skills"
-import { certificationsData } from "@/data/certifications"
-import { educationData } from "@/data/education"
-import { careerData } from "@/data/career"
-import { portfolioData } from "@/data/portfolio"
-import { studyListData } from "@/data/studyList"
+import { keywordData } from "@/data/keyword.js"
+import { skillsData } from "@/data/skills.js"
+import { certificationsData } from "@/data/certifications.js"
+import { educationData } from "@/data/education.js"
+import { careerData } from "@/data/career.js"
+import { portfolioData } from "@/data/portfolio.js"
+import { studyListData } from "@/data/studyList.js"
   
 import KeyWord from '@/components/Keyword.vue'
 import SkillsData from '@/components/SkillsData.vue'
