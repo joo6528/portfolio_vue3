@@ -7,7 +7,7 @@
     :class="[
     index !== 0 ? 'mt-[120px]' : '',
     index !== 0 ? 'max-1280:mt-[100px]' : '',
-    index !== 0 ? 'max-600:mt-[80px]' : '']",>
+    index !== 0 ? 'max-600:mt-[80px]' : '']">
     <p class="cnt-title">{{ group.year }}년</p>
     <div class="portfolio-list">
       <Swiper
@@ -90,14 +90,19 @@ const swiperMap = ref({})
  * 1280px 이하 → stop
  * 1280px 초과 → start
  */
-const controlAutoplay = (swiper) => {
+ const controlAutoplay = (swiper) => {
   if (!swiper?.autoplay) return
+
+  // 1. 먼저 Swiper의 크기와 상태를 최신화하여 화면에 잘 보이게 합니다.
+  swiper.update() 
 
   const isDesktop = window.innerWidth > 1280
 
   if (isDesktop) {
+    // 2. 데스크탑(1280px 초과)일 때만 재생
     swiper.autoplay.start()
   } else {
+    // 3. 모바일/태블릿(1280px 이하)일 때는 정지
     swiper.autoplay.stop()
   }
 }
