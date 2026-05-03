@@ -1,4 +1,5 @@
 <template>
+  <p class="spec_info">spec: vue3, tailwind css, javascript, figma</p>
   <!-- cnt01 -->
   <div
     class="portfolio-intro">

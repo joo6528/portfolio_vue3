@@ -485,6 +485,10 @@
     @apply opacity-100 visible
   }
 
+  .spec_info {
+    @apply text-[var(--gray03)] font-normal bottom-[3vh] right-[2vw] fixed z-[20] max-600:hidden;
+  }
+
   .portfolio-intro {
     @apply wd1600 flex-center flex-col relative pt-[40vh] gap-y-[16vh] max-600:pt-[35vh];
   }
