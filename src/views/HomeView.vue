@@ -85,7 +85,7 @@ import { educationData } from "@/data/education"
 import { careerData } from "@/data/career"
 import { portfolioData } from "@/data/portfolio"
 import { studyListData } from "@/data/studyList"
-
+  
 import KeyWord from '@/components/Keyword.vue'
 import SkillsData from '@/components/SkillsData.vue'
 import Certifications from '@/components/Certifications.vue'
