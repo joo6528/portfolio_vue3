@@ -1,13 +1,20 @@
 <template>
-  <h1 class="text-3xl font-bold text-blue-500">
-    Tailwind 적용 테스트
-  </h1>
-
 <router-view />
 
-<ScrollTop />
+<ThemeToggle />
+<QuickMenu :class="{ on: ui.showQuickMenu }" />
+<ScrollTop :class="{ on: ui.showScrollTop }" />
+
+<div class="dim" :class="{on: ui.isQuickMenuHover}"></div>
 </template>
 
 <script setup>
+import { RouterView  } from 'vue-router';
+import { useUIStore } from '@/stores/ui';
+
+const ui = useUIStore()
+
+import QuickMenu from '@/components/layout/QuickMenu.vue'
+import ThemeToggle from '@/components/layout/ThemeToggle.vue'
 import ScrollTop from '@/components/layout/ScrollTop.vue'
 </script>
