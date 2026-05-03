@@ -310,7 +310,7 @@
 @layer components {
   /* scrollTop css */
   .scrollTop-btn {
-      @apply fixed bottom-[10vh] opacity-0 invisible transition-opacity duration-500 edge-right z-10 cursor-pointer max-1400:w-[50px] max-1280:w-[40px];
+      @apply fixed bottom-[10vh] opacity-0 invisible transition-opacity duration-500 edge-right z-10 cursor-pointer max-1400:w-[50px] max-1280:w-[40px] max-600:bottom-[100px];
       transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
   }
 
@@ -718,7 +718,7 @@
   }
 
   .speedLink .subView_section a {
-    @apply h-[80px] block leading-[80px] px-[40px] text-[24px] font-medium shadow-[20px_20px_10px_var(--pointColorVioletOp2)] rounded-[15px] max-1400:h-[60px] max-1400:leading-[60px] max-1400:text-[20px] max-1280:h-[50px] max-1280:leading-[50px] max-1280:text-[18px] max-1280:text-[16px] max-1280:text-center max-1280:rounded-[10px] max-1280:shadow-[10px_10px_5px_var(--pointColorVioletOp2)] dark:shadow-[10px_10px_5px_var(--black03Op2)] dark:bg-[var(--black01)];
+    @apply h-[80px] block leading-[80px] px-[40px] text-[24px] font-medium shadow-[20px_20px_10px_var(--pointColorVioletOp2)] rounded-[15px] max-1400:h-[60px] max-1400:leading-[60px] max-1400:text-[20px] max-1280:h-[50px] max-1280:leading-[50px] max-1280:text-[18px] max-600:text-[16px] max-1280:text-center max-1280:rounded-[10px] max-1280:shadow-[10px_10px_5px_var(--pointColorVioletOp2)] dark:shadow-[10px_10px_5px_var(--black03Op2)] dark:bg-[var(--black01)];
   }
 
   .description .subView_section p {
