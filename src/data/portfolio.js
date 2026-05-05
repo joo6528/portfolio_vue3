@@ -185,7 +185,7 @@ export const portfolioData = [
         detail: {
           solution: "카페24",
           period: "2023.10 ~ 2024.02",
-          members: "PM(1명), 퍼블리셔(1명), 디자이너(1명)",
+          members: "PM(1명), 퍼블리셔(2명), 디자이너(1명)",
           role: "퍼블리싱 담당",
           contribution: "15%",
           responsive: "X",
