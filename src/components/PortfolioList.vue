@@ -15,7 +15,6 @@
         :modules="[Autoplay, Pagination]"
         :slides-per-view="'auto'"
         :space-between="50"
-        :slides-offset-after="50"
         :speed="800"
         :loop="false"
         :centered-slides="false"
@@ -36,7 +35,7 @@
           600: { spaceBetween: 40 },
           200: { spaceBetween: 30 },
         }"
-        class="!pb-[25px] !pr-[30px] max-1280:!pr-[0]" >
+        class="!pb-[25px] !pr-[calc((100%-min(90%,1600px))/2)]" >
         <SwiperSlide
           v-for="item in group.items"
           :key="item.id"
